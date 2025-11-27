@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  orderbook:
+    build: .
+    command: bash -c "pytest -q"
+    volumes:
+      - .:/app
